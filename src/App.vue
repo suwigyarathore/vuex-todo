@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <CreateTodo/>
+    <ListTodos/>
+    <TodosCount/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TodosCount from "./components/TodosCount";
+import CreateTodo from "./components/CreateTodo";
+import ListTodos from "./components/ListTodos";
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    TodosCount,
+    CreateTodo,
+    ListTodos
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+input {
+  border: 2px solid black;
+  padding: 20px;
+  font-size: 22px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  font-size: 26px;
 }
 </style>
