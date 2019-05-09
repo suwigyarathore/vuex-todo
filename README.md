@@ -1,4 +1,4 @@
-# learn-vuex
+# Vuex Todo
 
 ## Project setup
 ```
