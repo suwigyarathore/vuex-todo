@@ -11,6 +11,9 @@ import TodosCount from "./components/TodosCount";
 import CreateTodo from "./components/CreateTodo";
 import ListTodos from "./components/ListTodos";
 export default {
+  mounted() {
+    this.$store.dispatch("todos/getTodos");
+  },
   name: "app",
   components: {
     TodosCount,
